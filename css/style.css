@@ -39,9 +39,21 @@ label {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* .check-box:checked + .check-style {
+  background-image: url();
+} */
+
 .check-box:disabled + .check-style {
   border-color: #ccc;
 }
 .check-box:checked:disabled + .check-style::before {
   background-color: #ccc;
+}
+/* .check-box:checked:disabled + .check-style{
+    background-image: url();
+} */
+
+.check-box:focus + .check-style {
+  box-shadow: 0 0 0 2px #000;
 }
